@@ -1,0 +1,59 @@
+<xml>
+	<!-- Этот файл хранит информацию о раскладке карт в карточной игре Prospector. -->
+	
+	<!-- Элемент multiplier имеет атрибуты х и у с множителями. -->
+	<!-- Множители определяют, насколько свободной или плотной будет раскладка. --> 
+	<multiplier x="1.25" y="1.5" />
+
+	<!-- В разметке XML ниже атрибут id определяет номер карты -->
+	<!-- х и у определяют позицию в раскладке -->
+	<!-- если faceup имеет значение 1, карта повернута лицом вверх -->
+	<!-- layer определяет номер слоя, необходимого для правильного перекрытия -->
+	<!-- hiddenby - номер карты, перекрывающей эту -->
+	
+	<!-- Layer0, самый нижний ряд карт. -->
+	<slot id="0" x="-6" y="-5" faceup="0" layer="0" hiddenby="3,4" />
+	<slot id="1" x="0"  y="-5" faceup="0" layer="0" hiddenby="5,6" />
+	<slot id="2" x="6"  y="-5" faceup="0" layer="0" hiddenby="7,8" />
+	
+	<!-- Layer1, второй ряд снизу. -->
+	<slot id="3" x="-7" y="-4" faceup="0" layer="1" hiddenby="9,10" />
+	<slot id="4" x="-5" y="-4" faceup="0" layer="1" hiddenby="10,11" />
+	<slot id="5" x="-1" y="-4" faceup="0" layer="1" hiddenby="12,13" />
+	<slot id="6" x="1"  y="-4" faceup="0" layer="1" hiddenby="13,14" />
+	<slot id="7" x="5"  y="-4" faceup="0" layer="1" hiddenby="15,16" />
+	<slot id="8" x="7"  y="-4" faceup="0" layer="1" hiddenby="16,17" />
+	
+	
+	<!-- Layer2, третий ряд снизу. -->
+	<slot id="9"  x="-8" y="-3" faceup="0" layer="2" hiddenby="18,19" />
+	<slot id="10" x="-6" y="-3" faceup="0" layer="2" hiddenby="19,20" />
+	<slot id="11" x="-4" y="-3" faceup="0" layer="2" hiddenby="20,21" />
+	<slot id="12" x="-2" y="-3" faceup="0" layer="2" hiddenby="21,22" />
+	<slot id="13" x="0"  y="-3" faceup="0" layer="2" hiddenby="22,23" />
+	<slot id="14" x="2"  y="-3" faceup="0" layer="2" hiddenby="23,24" />
+	<slot id="15" x="4"  y="-3" faceup="0" layer="2" hiddenby="24,25" />
+	<slot id="16" x="6"  y="-3" faceup="0" layer="2" hiddenby="25,26" />
+	<slot id="17" x="8"  y="-3" faceup="0" layer="2" hiddenby="26,27" />
+	
+	
+	<!-- Layer3, верхний ряд. -->
+	<slot id="18" x="-9" y="-2" faceup="1" layer="3" />
+	<slot id="19" x="-7" y="-2" faceup="1" layer="3" />
+	<slot id="20" x="-5" y="-2" faceup="1" layer="3" />
+	<slot id="21" x="-3" y="-2" faceup="1" layer="3" />
+	<slot id="22" x="-1" y="-2" faceup="1" layer="3" />
+	<slot id="23" x="1"  y="-2" faceup="1" layer="3" />
+	<slot id="24" x="3"  y="-2" faceup="1" layer="3" />
+	<slot id="25" x="5"  y="-2" faceup="1" layer="3" />
+	<slot id="26" x="7"  y="-2" faceup="1" layer="3" />
+	<slot id="27" x="9"  y="-2" faceup="1" layer="3" />
+	
+	<!-- Позиция стопки свободных карт и их смещение друг относительно друга -->
+	<slot type="drawpile" x="6" y="4" xstagger="0.15" layer="4"/>
+	
+	<!-- Позиция стопки сброшенных карт и целевой карты -->
+	<slot type="discardpile" x="0" y="1" layer="5"/>
+	
+</xml>
+	
